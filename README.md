@@ -1,4 +1,4 @@
-# :wave: The Basics of GitHub : MODIFIED BY MUSTAFA BAYRAK, 150210339 (25.10.2021)
+# :wave: The Basics of GitHub : MODIFIED BY MUSTAFA BAYRAK, 150210339 (at 11:47, 25.10.2021)
 
 ## 🤓 Course overview and learning outcomes 
 

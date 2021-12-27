@@ -4,13 +4,16 @@
    <head>
        <title> My Web Page </title>
        <link rel="stylesheet" type="text/css" href="15_11_2021.css"/>
-       <style type="text/css"></style>
    </head>
-    <body>
+    <body onload="document.body.style.backgroundColor='pink'; sayHello()" 
+     onresize="document.body.style.backgroundColor='lightblue'"
+     onkeydown="document.body.style.backgroundColor='white'"
+     onkeyup="document.body.style.backgroundColor='lightyellow'">
+     
       <p>
          <strong> Introduction to Informaiton Systems </strong>
       </p>
-      <p class="centered">
+      <p class="centered" onmouseover="document.querySelector('.centered').style.font='bold 20pt arial, serif'">
          <em>
          Mustafa Bayrak
          <br>
@@ -18,23 +21,25 @@
          </em>
       </p>
       <p> Evolution of homo species </p>
-<ul>
+<ul id="ul-01" onmouseover="document.getElementById('ul-01').style.backgroundColor='purple'">
      <li> Homo habilis (able man) </li>
      <li> Homo erectus (upright man) </li>
      <li> Homo neanderthalensis </li>
      <li> Homo floresiensis (hobbit) </li>
      <li> Homo sapiens (wise man) </li>
-<ul>
-
+</ul>
+ <ul onclick="document.getElementById('ul-02').style.backgroundColor='orange'">
         <li> Homo sapiens sapiens </li>
      </ul>
-<h1><strong>Human Evolution</strong> </h1>
-<p><img src="evolution-diagram.png"></p>
+<h1 onmouseover="style.color='orange' ; style.backgroundColor='lightgreen'"
+onmouseout="style.backgroundColor='white' ;style.color='red'">
+<strong>Human Evolution</strong> </h1>
+<p><img id="img-01" alt="Evolution Diagram" onclick='alert(document.getElementById("img-01").alt="You are about the leave our webpage")' src="evolution-diagram.png"></p>
 <p>
    You can find the source of the image by clicking the link:
 <a  href="https://www.biologyonline.com/dictionary/homo-sapiens-sapiens">Biology online</a>
-</p>
-   <h2><strong>The clickable image</strong> </h2>
+</p> 
+  <h2><strong>The clickable image</strong> </h2>
    <p>
       The image below is a link,try it.
    <a href="https://www.biologyonline.com/dictionary/homo-sapiens-sapiens">
@@ -77,6 +82,11 @@ Homo sapiens is the species of all the highly developed primates on earth,a cate
                                        monkeys.
 
 </pre>
+<script>
+    function sayHello() {
+        alert("Welcome aboard!");
+    }
+</script>
 </body>
     <body>
     </html>
